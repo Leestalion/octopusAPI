@@ -12,5 +12,8 @@
     "axios": "^1.7.2",
     "express": "^4.19.2",
     "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.7"
   }
 }
