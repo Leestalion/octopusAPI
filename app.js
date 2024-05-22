@@ -2,9 +2,13 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.use(express.json());
+
+app.get('/api', (req, res) => {
+    res.send('Hello from the API!');
+});
 
 app.get('/api/send-description', async function (req, res) {
     var description = "The description is a sample description";
@@ -20,6 +24,6 @@ app.get('/api/send-description', async function (req, res) {
 });
 
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(port, '0.0.0.0',() => {
+    console.log(`Server is running on http://0.0.0.0:${port}`);
 });

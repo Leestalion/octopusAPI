@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for octopusapi on 2024-05-22T14:09:34+02:00
+# fly.toml app configuration file generated for octopusapi-2 on 2024-05-22T14:43:22+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'octopusapi'
+app = 'octopusapi-2'
 primary_region = 'cdg'
 
 [build]
